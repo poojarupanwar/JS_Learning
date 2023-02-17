@@ -1,0 +1,18 @@
+console.log("******************** step 1 ************************");
+var sweety="Sweety";
+var cutie="Cutie";
+console.log("Before swaping:",sweety," ",cutie);
+var tmp;
+tmp=sweety;
+sweety=cutie;
+cutie=tmp;
+console.log("After swapping: ",sweety," ",cutie);
+console.log("******************** step 2 ************************");
+var num1=100;
+var num2=200;
+var num3=300;
+console.log("Before swapping:",num1,num2,num3);
+num1=num2;
+num2=num3;
+num3=num1;
+console.log("After swapping:",num1,num2,num3);
