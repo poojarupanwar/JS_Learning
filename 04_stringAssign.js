@@ -27,7 +27,7 @@ function stringHandsOn(){
     console.log("************************ 9 ****************************");
     console.log("String ends with  'up' :",strTrim.endsWith("up"));
     console.log("************************ 10 ****************************");
-    console.log("String starts with  'Hey' :",strTrim.startsWith("up"));
+    console.log("String starts with  'Hey' :",strTrim.startsWith("Hey"));
      
 }
 stringHandsOn();
