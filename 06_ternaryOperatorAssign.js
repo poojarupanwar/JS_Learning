@@ -1,7 +1,7 @@
 
 console.log("--------------------- 1 --------------------------");
 function greaterNumber(num1,num2){
-    var res=num1>num2?`Number ${num1} is graeter `:`Number ${num2} is greater`;
+    var res=num1>num2?`Between ${num1} and ${num2} number ${num1} is greater `:`Between ${num1} and ${num2} number ${num2} is greater`;
 return res;
 }
 var val1=greaterNumber(10,-10);
