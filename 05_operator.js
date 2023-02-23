@@ -33,3 +33,19 @@ console.log(num3==num4);
 
 console.log(`strict equity operator :`);
 console.log(num3===num4);
+
+
+//ternerary operator
+var age=20;
+var res=age>=21?"congratulations":"better luck next time";
+console.log(res);
+
+var marks=70;
+var result=marks>=65?"Allow for interview":"dont allow";
+console.log(result);
+
+console.log("Even or ODD");
+var MyNum=7;
+//even -divided by 2 and reminder is 0
+var res=MyNum%2==0?"Even":"ODD";
+console.log(res);
