@@ -63,4 +63,9 @@ console.log(`It is not number${notNum}`);
  console.log(typeof myNum)
 
 
- //
+ //Number to string using to string operator
+ console.log('Number to string using to string operator---->  toString');
+ var numToStr=100;
+ console.log("Before conversion :"+typeof numToStr)
+ var myNumStr=numToStr.toString();
+ console.log("After Conversion:"+typeof myNumStr)
