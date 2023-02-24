@@ -49,3 +49,8 @@ var MyNum=7;
 //even -divided by 2 and reminder is 0
 var res=MyNum%2==0?"Even":"ODD";
 console.log(`the number ${MyNum} is ${res}`);
+
+//not a number
+var fullName='hello';
+var notNum=+fullName;
+console.log(`It is not number${notNum}`);
