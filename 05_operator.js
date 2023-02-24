@@ -54,3 +54,13 @@ console.log(`the number ${MyNum} is ${res}`);
 var fullName='hello';
 var notNum=+fullName;
 console.log(`It is not number${notNum}`);
+
+//Explicit conversion: string to number using + operator
+ var numInStr="100";
+ console.log(typeof numInStr);
+ var myNum=+numInStr;
+ 
+ console.log(typeof myNum)
+
+
+ //
