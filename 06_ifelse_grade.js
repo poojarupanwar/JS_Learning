@@ -28,21 +28,21 @@ if(marks>=90)
 {
     console.log(`Fantastic Marks : ${marks} ,Your grade is A+`)
 }
-if(marks>=75)
+else if(marks>=75)
 {
     console.log(`Excellent Marks : ${marks} ,Your grade is A`)
 }
-if(marks>=50 && marks<75)
+else if(marks>=50 && marks<75)
 {
     console.log(`Good Marks : ${marks} ,Your grade is B`)
 }
-if(marks>=35 && marks<50)
+else if(marks>=35 && marks<50)
 {
     console.log(`Marks is : ${marks} ,Your grade is C ,Need Improvment`)
 }
-if(marks<=0 || marks>100 || marks!=Number || marks==String)
+else if(marks<=0 || marks>100 || marks!=Number || marks===String)
 {
-    console.log(`Please provide valid marks`)
+    console.log(`Please provide valid marks -${marks}`)
 }
 }
 gradeCalulation(98)
@@ -56,6 +56,6 @@ gradeCalulation(29)
 gradeCalulation(64)
 gradeCalulation(49)
 gradeCalulation("91")
-gradeCalulation("eighty")
+gradeCalulation("Eighty")
 gradeCalulation(NaN)
 gradeCalulation(null)
