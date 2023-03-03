@@ -4,7 +4,7 @@ function check_leap_year(leapYear){
         console.log(`Year ${leapYear} is aleap year`);
      }
      else if(leapYear!=Number){
-        console.log(` '${leapYear}' is not a valid Year, Please provide valid leap year.`)
+        console.log(` '${leapYear}'  is not a valid Year, Please provide valid leap year.`)
      }
     else{
         console.log("Not a leap year")
