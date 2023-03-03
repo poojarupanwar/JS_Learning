@@ -1,9 +1,9 @@
 function check_leap_year(leapYear){
      
-     if((leapYear%4==0) || (leapYear%100===0) || (leapYear%200===0 ) ){
+     if((leapYear%4==0) || (leapYear%100===0) || (leapYear%200===0 )  ){
         console.log(`Year ${leapYear} is aleap year`);
      }
-     else if(leapYear!=Number){
+     else if(typeof leapYear!=Number){
         console.log(` '${leapYear}'  is not a valid Year, Please provide valid leap year.`)
      }
     else{
