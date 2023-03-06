@@ -31,9 +31,9 @@ for(let i=str.length-1;i>0;i--){
     return rev.length; 
 }
 let word1=LastWordCharsCount("JavaScript is the language Of Internet");
-console.log(`Length of last ${word1}`);
+console.log(`Length of last word ${word1}`);
 let word2=LastWordCharsCount("I am Angular Developer");
-console.log(`Length of last ${word2}`);
+console.log(`Length of last word ${word2}`);
 let word3=LastWordCharsCount("Hard Work and commitment is the key of success");
-console.log(`Length of last ${word3}`);
+console.log(`Length of last word ${word3}`);
  
