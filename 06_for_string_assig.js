@@ -16,22 +16,24 @@ countVowels("Hard Work and commitment is the key of success");
 
   
 console.log(`-------------------- step  2 -------------`);
-function LastWordCharsCount(str){
-let rev="";
-
+var  LastWordCharsCount=function(str){
+var rev="";
 for(let i=str.length-1;i>0;i--){
-    if(str[i]==" "){
-    return;
+    var ch=str.charAt(i);
+    if(ch==" "){
+    break;
     }
     else{
-        rev+=str[i];
-        console.log("length is:"+rev.length+" "+rev);
+       rev =rev+ch;
     }
-    
+   
     }   
-    console.log("length is:"+rev.length); 
+    return rev.length; 
 }
-//LastWordCharsCount("JavaScript is the language Of Internet");
-LastWordCharsCount("I am Angular Developer");
-//LastWordCharsCount("Hard Work and commitment is the key of success");
+let word1=LastWordCharsCount("JavaScript is the language Of Internet");
+console.log(`Length of last ${word1}`);
+let word2=LastWordCharsCount("I am Angular Developer");
+console.log(`Length of last ${word2}`);
+let word3=LastWordCharsCount("Hard Work and commitment is the key of success");
+console.log(`Length of last ${word3}`);
  
