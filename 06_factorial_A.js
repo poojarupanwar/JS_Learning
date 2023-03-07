@@ -16,12 +16,17 @@ function factorialOfNum(n)
             }
     }
 }
-    console.log(`factorial of ${n} is ${ans}`)
+    return ans;
 }
-factorialOfNum(5);
-factorialOfNum(3);
- factorialOfNum(null);
-factorialOfNum(8);
-factorialOfNum(undefined);
-factorialOfNum(9);
-factorialOfNum(0);
+var res=factorialOfNum(5);
+console.log(`factorial of 5 is ${res}`)
+var res=factorialOfNum(3);
+console.log(`factorial of 3 is ${res}`)
+var res=factorialOfNum(null);
+var res=factorialOfNum(8);
+console.log(`factorial of 8 is ${res}`)
+var res=factorialOfNum(undefined); 
+var res=factorialOfNum(9);
+console.log(`factorial of 9 is ${res}`)
+var res=factorialOfNum(0);
+console.log(`factorial of 0 is ${res}`)
