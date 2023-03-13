@@ -33,7 +33,6 @@ class Collage{
  
     }
 }
-console.log("------------------------- step 1 --------------------------");
 const obj1=new Vehicle('TATA','Nexon','Petrol',870986,'Black');
  
 const obj2=new Vehicle('Thar','SUV','Petrol',900567,'Red');
@@ -46,7 +45,7 @@ const obj5=new Vehicle('Maruti','Swift','Disel',890986,'Blue');
 
 let arrayOfVehicles=[obj1,obj2,obj3,obj4,obj5];
 
-console.log("------------------------- Using For in Loop --------------------------");
+console.log("------------------------- step 1 Using For in Loop --------------------------");
 
 for(let key in arrayOfVehicles){
     console.log(arrayOfVehicles[key]);
@@ -63,3 +62,4 @@ collage1.traverseObject();
 collage2.traverseObject();
 collage3.traverseObject();
 collage4.traverseObject();
+
