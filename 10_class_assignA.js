@@ -45,9 +45,7 @@ const obj4=new Vehicle('BMW','Nexon','Petrol',870986,'White');
 const obj5=new Vehicle('Maruti','Swift','Disel',890986,'Blue');
 
 let arrayOfVehicles=[obj1,obj2,obj3,obj4,obj5];
-for(let i=0;i<5;i++){
-    console.log(arrayOfVehicles[i]);
-}
+
 console.log("------------------------- Using For in Loop --------------------------");
 
 for(let key in arrayOfVehicles){
