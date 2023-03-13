@@ -62,4 +62,15 @@ collage1.traverseObject();
 collage2.traverseObject();
 collage3.traverseObject();
 collage4.traverseObject();
+console.log("\n------------------------- Prime number or Not --------------------------");
 
+function isPrime(num){
+    for(let i=2;i<num;i++){
+        if(num%i==0){
+            return false;
+        }
+    }
+    return true;
+}
+let res=isPrime(7);
+console.log(`Number ${num} is ${res}`);
