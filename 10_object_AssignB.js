@@ -1,8 +1,8 @@
 const bankSbi={
-    bankName:"YesBank",
+    bankName:"SBIBank",
     accountNo:"AC0091235",
-    ifsc:"YES098485",
-    branch:"Pune"
+    ifsc:"SBI098485",
+    branchCode:"SBI09"
 }
 const bankLocation={
     street:"banner",
@@ -10,23 +10,15 @@ const bankLocation={
     pincode:411234
 }
 //display function
-function traverseBank(bankobj){
+function traverse(bankobj){
     for(const key in bankobj){
-        if(Object.hasOwnProperty.call(bankSbi,key)){
+        if(Object.hasOwnProperty.call(bankobj,key)){
             const element=bankobj[key];
             console.log(`The ${key} is: ${element} `);
         }
     }
 }
-function traverseLoc(bankobj){
-    for(const key in bankobj){
-        if(Object.hasOwnProperty.call(bankLocation,key)){
-            const element=bankobj[key];
-            console.log(`The ${key} is: ${element} `);
-        }
-    }
-}
-
+ 
 //clone 1st obj using object.assign
 let objAssibank=Object.assign({}, bankSbi);
 //clone 1st obj using spread operator
@@ -34,9 +26,9 @@ let spreadBank={...bankSbi};
 
 //display them on console
 console.log(`------------------ Clone Object Bank Using Object.assign -----------`);
-traverseBank(objAssibank)
+traverse(objAssibank)
 console.log(`------------------ Clone Object Bank Using spread operator -----------`);
-traverseBank(spreadBank)
+traverse(spreadBank)
 
 
 //clone 2nd obj using object.assign
@@ -48,6 +40,19 @@ let spreadbankLoc={...bankLocation};
 //display them on console
  
 console.log(`------------------ Clone Object Bank Using Object.assign -----------`);
-traverseLoc(objAssibankLoc)
+traverse(objAssibankLoc);
 console.log(`------------------ Clone Object Bank Using spread operator -----------`);
-traverseLoc(spreadbankLoc)
+traverse(spreadbankLoc);
+
+const rateOfInterest={
+    homeLoanInterest:10.5,
+    personalLoanInterest:12.5,
+    dueInterest:15.2,
+}
+console.log(`------------------ Merge step1 ,step 2 and step 4 Objects into new Object-----------`);
+const sbiDetails=Object.assign({},bankSbi,bankLocation,rateOfInterest);
+console.log(sbiDetails)
+console.log(`------------------ Traverse using loop -----------`);
+traverse(sbiDetails);
+
+ 
