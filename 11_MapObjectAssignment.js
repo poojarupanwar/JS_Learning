@@ -44,14 +44,14 @@ bankSet.set("AC964246979",hdfc_bank);
 bankSet.set("AC965355547",panjab_bank);
 let keysMap=bankSet.keys();
 
-// for (let key of keysMap) {
-//     console.log(key, bankSet.get(key));
-// }
+for (let k of keysMap) {
+    console.log(k,"=>", bankSet.get(k));
+}
 console.log(`\n---------------- Traverse Map  -------------`);
 
 for ( let key of keysMap) {
-     
-    console.log("Bank Name :",bankSet.get(key).bankName,", Account No :",bankSet.get(key).accountno,", Interest Rate :",bankSet.get(key).interestRate);
+       console.log("Bank Name :",bankSet.get(key).bankName,", Account No :",bankSet.get(key).accountno,", Interest Rate :",bankSet.get(key).interestRate);
+       //console.log(keysMap);
 }
  
 
