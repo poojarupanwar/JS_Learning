@@ -14,7 +14,7 @@ let student = {
 // let collegeName = student.collegeName;
 // let id = student.id;
 let { firstName, isWorking, age, collegeName, id, city="PUNE"} = student; // Object Destructuring
-console.log(`Extracted values from object is: isWorking ${isWorking}  age ${age}  collegeName ${collegeName}, City ${city} `);
+console.log(`Extracted values from object is: First Name : ${firstName}, isWorking  ${isWorking} ,age ${age}  collegeName ${collegeName}, City ${city} `);
 
 
 // Array Destructuring
