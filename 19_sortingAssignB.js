@@ -8,24 +8,39 @@ class Employee{
     }
 }
 const emp_anil=new Employee(22,"Anil","IT",50000,"TCS");
+const emp_sonali=new Employee(66,"Sonali","Finance",45000,"Infy");
+const emp_mahi=new Employee(99,"Mahesh","HR",85000,"Infy");
+const emp_monika=new Employee(77,"Monika","IT",40000,"Wipro");
 const emp_radha=new Employee(33,"Radha","HR",74000,"Wipro");
 const emp_rishi=new Employee(55,"Rishi","Finance",47000,"TCS");
-const emp_sonali=new Employee(66,"Sonali","Finance",45000,"Infy");
-const emp_monika=new Employee(77,"Monika","IT",40000,"Wipro");
 const emp_viny=new Employee(88,"Vinayak","IT",75000,"TCS");
-const emp_mahi=new Employee(99,"Mahesh","HR",85000,"Infy");
 
 const arrayEmployees=[emp_anil,emp_radha,emp_rishi,emp_sonali,emp_monika,emp_viny,emp_mahi]
 
-console.log(`---------- Sort employees acording to employee id in ascending order  -----------`)
- arrayEmployees.sort((emp1,emp2)=>{
-  return emp1<emp2?1:-1;
+console.log(`---------- Sort employees acording to Employee id in Ascending order  -----------`)
+  arrayEmployees.sort((emp1,emp2)=>{
+  return emp1.emp_id>emp2.emp_id?1:-1;
  })
-console.log(arrayEmployees);
- 
-console.log(`---------- Sort employees acording to employee id in decending order -----------`)
+  arrayEmployees.forEach((emp) => {
+  console.log(`Employee ID : ${emp.emp_id} , Empoyee Name:${emp.emp_name}, Employee Department:${emp.emp_dept}`);
+  
+ });
+
+console.log(`---------- Sort employees acording to Employee Department in Decending order -----------`)
  arrayEmployees.sort((emp1,emp2)=>{
-  return emp1<emp2?1:-1;
+  return emp1.emp_dept>emp2.emp_dept?1:-1;
  })
-console.log(arrayEmployees);
+ arrayEmployees.forEach((emp) => {
+  console.log(`Employee ID : ${emp.emp_id} , Empoyee Name:${emp.emp_name}, Employee Department: ${emp.emp_dept}`);
+  
+ });
+ console.log(`---------- Sort employees acording to Employee Salary in Decending order -----------`)
+ arrayEmployees.sort((emp1,emp2)=>{
+  return emp1.emp_salary>emp2.emp_salary?-1:1;
+ })
+ arrayEmployees.forEach((emp) => {
+  console.log(`Employee ID : ${emp.emp_name} , Empoyee Name:${emp.emp_salary}, Employee Department: ${emp.emp_company}`);
+  
+ });
+
  
