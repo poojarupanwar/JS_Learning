@@ -39,7 +39,7 @@ console.log(`---------- Sort employees acording to Employee Department in Decend
   return emp1.emp_salary>emp2.emp_salary?-1:1;
  })
  arrayEmployees.forEach((emp) => {
-  console.log(`Employee ID : ${emp.emp_name} , Empoyee Name:${emp.emp_salary}, Employee Department: ${emp.emp_company}`);
+  console.log(`Employee ID : ${emp.emp_name} , Empoyee Salary:${emp.emp_salary}, Employee Department: ${emp.emp_company}`);
   
  });
 
