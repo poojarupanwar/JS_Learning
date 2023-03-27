@@ -46,8 +46,7 @@ let empSalWiproInfy=objArray.filter((emp)=>{
 })
 let salAvgWiproInfy=salary.reduce((runningTotal,value)=>{
    total=runningTotal+value;
-     
-    return total;
+        return total;
 })
 console.log(salAvgWiproInfy/salary.length);
  
