@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment A</title>
+</head>
+<body>
+ <main>
+    <div id="overview">
+        <h1 id="h1">
+            HTML and JavaScript are crutial technologies
+        </h1>
+        <p>The web would not work without them...</p>
+    </div>
+    <div id="advantages">
+        <ul>
+            <li>Flexible</li>
+            <li>Available</li>
+            <li>Magical</li>
+        </ul>
+    </div>
+ </main>  
+ 
+ <script>
+    console.log(`--------------- h1 element store in Main Heading-----------------------`);
+    const mainHeading=document.getElementById("h1");
+    console.log(mainHeading.innerHTML);
+    console.log(`-------------------- li element Available second Advantage ------------------------`);
+    const secondAdvantage=document.querySelectorAll('li');
+    console.log(secondAdvantage[1].innerHTML);
+    
+    console.log(`-------------------- div element in advDiv---------------------`);
+
+    const advDiv=document.querySelectorAll("#advantages");
+    console.log(advDiv[0].innerHTML);
+   
+ </script>
+ 
+</body>
+</html>
