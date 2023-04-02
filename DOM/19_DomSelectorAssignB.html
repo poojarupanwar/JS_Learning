@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="profile">
+        My profile details
+    </h2>
+    <h3 id="techstack">Technology stack</h3>
+
+    <ul>
+        <li class="liItem">HTML and CSS</li>
+        <li class="liItem">Angular or React</li>
+        <li class="liItem">Database</li>
+    </ul>
+    <h2>Hobbies</h2>
+    <a href="http://www.google.com" target="_blank" id="myprofile">my profile</a>
+    <div id="divProject">
+        <p id="project">Project Details</p>
+        <p>Project Description</p>
+    </div>
+    <script >
+
+        const dbase=document.querySelectorAll('.liItem');
+        dbase[2].innerHTML="Oracle Database"
+        console.log(dbase[2].innerHTML)
+
+        const linkchange=document.querySelector('#myprofile')
+        linkchange.setAttribute('href',"http://www.linkedin.com")
+        console.log(linkchange)
+
+        console.log(`--------- changing prop of using js -----------`);
+        const techstackcolor=document.querySelector("#techstack");
+        techstackcolor.style.color="red";
+        techstackcolor.style.fontFamily="'Courier New', Courier, monospace";
+
+        const profileColor=document.querySelector("#profile");
+        profileColor.style.color="blue";
+        profileColor.style.fontFamily="Arial";
+
+        const elementDiv=document.querySelector("#divProject");
+        const elementProj=document.querySelector("#project");
+        elementDiv.removeChild(elementProj);
+    </script>
+
+</body>
+
+</html>
