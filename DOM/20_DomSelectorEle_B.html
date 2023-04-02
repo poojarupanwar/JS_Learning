@@ -8,15 +8,13 @@
 </head>
 
 <body>
- 
-    
-    <button id="hobby">Your Hobbies</button>
+       <button >Your Hobbies</button>
  
 <script>
 console.log("------------- Add Hobbies ---------------")
-const Myhobby=document.getElementById("#hobby");
+const Myhobby=document.querySelector("button");
 Myhobby.addEventListener("click",()=>{
-    prompt("Enter the Hobby","Reading")
+    const hobby=prompt("Enter the Hobby","Reading")
     console.log(hobby);
 });
 
